@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>  
+        <h1>Calculadora</h1>
+        <form name="calculator">
+
+            <p><input type="text" name="screen" maxlength="15" id="tela" readonly></p>
+
+            <button type="button" onclick="insertCaractere('(')">(</button>
+            <button type="button" onclick="insertCaractere(')')">)</button>
+            <button type="button" id="delete" onclick="deleteValue()">Del</button>
+            <button type="button" onclick="cleanScreen()">C</button><br>
+
+            <button type="button" onclick="insertCaractere('7')">7</button>
+            <button type="button" onclick="insertCaractere('8')">8</button>
+            <button type="button" onclick="insertCaractere('9')">9</button>
+            <button type="button" onclick="insertCaractere('/')">/</button><br>
+
+            <button type="button" onclick="insertCaractere('4')">4</button>
+            <button type="button" onclick="insertCaractere('5')">5</button>
+            <button type="button" onclick="insertCaractere('6')">6</button>
+            <button type="button" onclick="insertCaractere('*')">x</button><br>
+
+            <button type="button" onclick="insertCaractere('1')">1</button>
+            <button type="button" onclick="insertCaractere('2')">2</button>
+            <button type="button" onclick="insertCaractere('3')">3</button>
+            <button type="button" onclick="insertCaractere('-')">-</button><br>
+            
+            <button type="button" onclick="insertCaractere('0')">0</button>
+            <button type="button" onclick="insertCaractere('.')">.</button>
+            <button type="button" id="resultado" onclick="calculateTotal()">=</button>
+            <button type="button" onclick="insertCaractere('+')">+</button><br>
+        </form>
+    </main>
+</body>
+</html>
+<script src="../js/script.js"></script>
